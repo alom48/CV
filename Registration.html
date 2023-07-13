@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Registration.css">
+</head>
+
+<div class="background_image"></div>
+
+<body>
+    <h1>Registration</h1>
+
+    <div class="form">
+
+        <form onsubmit="return signUpVal()" action="home.html">
+            <!-- <form onsubmit="return signUpVal()"> -->
+            <table>
+                <tr>
+                    <td><label for="fname">First Name&nbsp;:</label></td>
+                    <td><input type="text" id="fname" name="fname">
+                        <!-- <span class="error" id="efname"></span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name&nbsp;:</label></td>
+                    <td><input type="text" id="lname" name="lname">
+                        <!-- <span class="error" id="elname"></span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email :</label></td>
+                    <td><input type="email" name="email" id="iemail" required>
+                        <!-- <span class="error" id="eemail">lpopop</span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile&nbsp;:</label></td>
+                    <td><input type="number" id="mobile" name="mobile" required>
+                        <!-- <span class="error" id="emobile"></span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password&nbsp;:</label></td>
+                    <td><input type="password" id="pass" name="pass" required>
+                        <!-- <span class="error" id="epass"></span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cpass">Confirm Password&nbsp;:</label></td>
+                    <td><input type="password" id="cpass" name="cpass">
+                        <!-- <span class="error" id="ecpass"></span> -->
+                    </td>
+                </tr>
+                <tr style="text-align:right">
+                    <td colspan="2">
+                        <input type="submit" value="Submit" id="submit-btn" name="submit-btn">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
